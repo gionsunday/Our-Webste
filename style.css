@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.form-section{
+    text-align: center;
+    background-color: rgb(9, 1, 26);
+    padding: 2em;
+   
+    width: 100%;
+}
+.container{
+    height: 80vh;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+     margin-top: 40px;
+   text-align: center;
+    position: relative;
+    align-self: center;
+     left: 0%;
+     background-color: rgb(255, 255, 255);
+     box-shadow: 2px 2px 1px rgb(255, 255, 255);
+
+}
+@media screen and (min-width:768px) {
+    .container{
+        width: 40%  !important;
+    }
+    .container-btn button{
+        border-radius: 1em;
+        padding: 1em;
+        width: 10em;
+        position: relative;
+        left: 25%;
+    }
+}
+.container-btn,.container-item {
+    width: 75%;
+    padding: 10px;
+    left: 12%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    
+   
+}
+.container-item input {
+    padding: 0.5em ;
+    margin: 0.2em ;
+    border-radius: 1em;
+    border: 5px solid rgb(131, 131, 118);
+
+}
+#error, #thankyou{
+    display: none;
+}
+.container-btn button{
+    border-radius: 1em;
+    padding: 0.5em;
+    width: 8em;
+    position: relative;
+    left: 25%;
+    font-weight: bold;
+
+}
+.left{
+    left: 0;
+}
+.right{
+    left: 100%;
+}
+.error{
+    border: 2px solid crimson;
+     border-radius: 1rem; 
+     color: crimson;
+}
+.thankyou{
+    border: 2px solid rgb(5, 197, 69);
+    border-radius: 1rem; 
+    color: rgb(9, 199, 57);
+}
