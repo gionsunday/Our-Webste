@@ -1,4 +1,23 @@
 
+const url = 'https://car-api2.p.rapidapi.com/api/vin/KNDJ23AU4N7154467';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '1ed57a3380msh62d4ef476747f66p1efec7jsnbaacafbc4f35',
+		'X-RapidAPI-Host': 'car-api2.p.rapidapi.com'
+	}
+};
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.text();
+	console.log(result);
+} catch (error) {
+	console.error(error);
+}
+
+
+
 
 
 Accepting Payments with Paystack API in Node.js and Express.js: Implementation and Best Practices
